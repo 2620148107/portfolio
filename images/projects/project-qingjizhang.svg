@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="轻记账:极简记账小程序">
+  <rect width="640" height="400" fill="#f2f7f3"/>
+  <!-- 收支柱状图 -->
+  <g transform="translate(60 60)">
+    <rect width="250" height="280" rx="12" fill="#ffffff" stroke="#d5e3d9"/>
+    <rect x="22" y="24" width="90" height="12" rx="6" fill="#2e7d54"/>
+    <rect x="22" y="48" width="60" height="8" rx="4" fill="#cfe0d5"/>
+    <line x1="22" y1="240" x2="228" y2="240" stroke="#d5e3d9" stroke-width="2"/>
+    <g>
+      <rect x="36"  y="150" width="22" height="90" rx="4" fill="#57b07f"/>
+      <rect x="72"  y="190" width="22" height="50" rx="4" fill="#a8d8bc"/>
+      <rect x="108" y="120" width="22" height="120" rx="4" fill="#57b07f"/>
+      <rect x="144" y="176" width="22" height="64" rx="4" fill="#a8d8bc"/>
+      <rect x="180" y="140" width="22" height="100" rx="4" fill="#57b07f"/>
+      <rect x="216" y="196" width="22" height="44" rx="4" fill="#a8d8bc"/>
+    </g>
+    <rect x="22" y="258" width="40" height="8" rx="4" fill="#e2ede6"/>
+    <rect x="80" y="258" width="40" height="8" rx="4" fill="#e2ede6"/>
+    <rect x="138" y="258" width="40" height="8" rx="4" fill="#e2ede6"/>
+  </g>
+  <!-- 预算提醒卡 -->
+  <g transform="translate(60 60)">
+    <rect x="290" y="0" width="230" height="86" rx="12" fill="#e6f3ea" stroke="#bcdcc7"/>
+    <circle cx="40" cy="43" r="18" fill="#2e7d54"/>
+    <path d="M40 33 v12 M40 51 v.5" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <rect x="72" y="24" width="120" height="12" rx="6" fill="#9ecdae"/>
+    <rect x="72" y="48" width="150" height="10" rx="5" fill="#cfe0d5"/>
+  </g>
+  <!-- 记账明细列表 -->
+  <g transform="translate(350 170)">
+    <rect width="230" height="170" rx="12" fill="#ffffff" stroke="#d5e3d9"/>
+    <g>
+      <circle cx="34" cy="36" r="12" fill="#d2e9da"/>
+      <rect x="58" y="26" width="90" height="10" rx="5" fill="#cfe0d5"/>
+      <rect x="188" y="26" width="28" height="10" rx="5" fill="#57b07f"/>
+      <circle cx="34" cy="85" r="12" fill="#d2e9da"/>
+      <rect x="58" y="75" width="90" height="10" rx="5" fill="#cfe0d5"/>
+      <rect x="188" y="75" width="28" height="10" rx="5" fill="#a8d8bc"/>
+      <circle cx="34" cy="134" r="12" fill="#d2e9da"/>
+      <rect x="58" y="124" width="90" height="10" rx="5" fill="#cfe0d5"/>
+      <rect x="188" y="124" width="28" height="10" rx="5" fill="#2e7d54"/>
+    </g>
+  </g>
+  <!-- 语音记账麦克风按钮 -->
+  <g transform="translate(255 200)">
+    <circle cx="0" cy="0" r="44" fill="#2e7d54"/>
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#bcdcc7" stroke-width="3"/>
+    <rect x="-8" y="-24" width="16" height="30" rx="8" fill="#ffffff"/>
+    <path d="M-16 -2 a16 16 0 0 0 32 0" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="14" x2="0" y2="22" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

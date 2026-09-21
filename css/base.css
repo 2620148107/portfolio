@@ -1,0 +1,56 @@
+/* ========== 基础样式:重置、变量、排版 ========== */
+
+:root {
+  --color-bg: #ffffff;
+  --color-sidebar-bg: #f7f8fa;
+  --color-text: #1f2430;
+  --color-text-soft: #5b6472;
+  --color-accent: #2f6fed;
+  --color-accent-soft: #e8effd;
+  --color-divider: #e3e6eb;
+  --font-main: -apple-system, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+  --sidebar-width: 340px;
+  --radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  line-height: 1.35;
+  font-weight: 600;
+}

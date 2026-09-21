@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="课语通:AI 课程问答助手">
+  <rect width="640" height="400" fill="#f2f7f3"/>
+  <!-- 书本 -->
+  <g transform="translate(60 210)">
+    <rect x="0" y="40" width="150" height="20" rx="4" fill="#2e7d54"/>
+    <rect x="8" y="20" width="134" height="20" rx="4" fill="#57b07f"/>
+    <rect x="16" y="0" width="118" height="20" rx="4" fill="#a8d8bc"/>
+  </g>
+  <!-- 对话气泡:提问 -->
+  <g>
+    <rect x="270" y="50" width="300" height="70" rx="16" fill="#ffffff" stroke="#d5e3d9"/>
+    <polygon points="300,120 320,120 300,142" fill="#ffffff" stroke="#d5e3d9"/>
+    <rect x="294" y="70" width="200" height="10" rx="5" fill="#cfe0d5"/>
+    <rect x="294" y="90" width="150" height="10" rx="5" fill="#e2ede6"/>
+  </g>
+  <!-- 对话气泡:AI 回答 -->
+  <g>
+    <rect x="250" y="170" width="330" height="96" rx="16" fill="#e6f3ea" stroke="#bcdcc7"/>
+    <polygon points="540,266 560,266 560,288" fill="#e6f3ea" stroke="#bcdcc7"/>
+    <circle cx="282" cy="200" r="14" fill="#2e7d54"/>
+    <path d="M277 200 l4 4 l8 -9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="308" y="190" width="240" height="10" rx="5" fill="#9ecdae"/>
+    <rect x="308" y="212" width="210" height="10" rx="5" fill="#b9dbc6"/>
+    <rect x="308" y="234" width="160" height="10" rx="5" fill="#d2e9da"/>
+  </g>
+  <!-- 知识点卡片 -->
+  <g>
+    <rect x="270" y="300" width="120" height="70" rx="10" fill="#ffffff" stroke="#d5e3d9"/>
+    <rect x="286" y="316" width="70" height="8" rx="4" fill="#cfe0d5"/>
+    <rect x="286" y="334" width="88" height="8" rx="4" fill="#e2ede6"/>
+    <rect x="410" y="300" width="120" height="70" rx="10" fill="#ffffff" stroke="#d5e3d9"/>
+    <rect x="426" y="316" width="70" height="8" rx="4" fill="#cfe0d5"/>
+    <rect x="426" y="334" width="88" height="8" rx="4" fill="#e2ede6"/>
+  </g>
+</svg>

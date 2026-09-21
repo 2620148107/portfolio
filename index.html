@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林凡斐 · 个人作品集</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- ========== 左侧固定侧边栏:个人简介 + 技能 + 导航 ========== -->
+    <aside class="sidebar" id="profile">
+      <div class="sidebar-bar">
+        <span class="bar-name">林凡斐</span>
+        <button class="menu-toggle" id="menuToggle" aria-label="展开导航菜单" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="sidebar-inner" id="sidebarInner">
+        <div class="profile">
+          <img class="avatar"
+               src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=friendly%20young%20asian%20female%20college%20student%20portrait%2C%20minimal%20flat%20illustration%2C%20soft%20blue%20background%2C%20clean%20modern%20style&image_size=square"
+               alt="林凡斐的头像" onerror="this.classList.add('img-failed')">
+          <h1 class="name">林凡斐</h1>
+          <p class="tagline">数据科学与大数据技术 · 关注 AI 辅助开发与大语言模型应用</p>
+          <p class="meta">广州软件学院 · 在读 · 中国·广州</p>
+        </div>
+
+        <nav class="nav" id="nav" aria-label="主导航">
+          <a href="#profile" class="nav-link">个人简介</a>
+          <a href="#projects" class="nav-link">项目作品</a>
+          <a href="#about" class="nav-link">关于我</a>
+          <a href="#contact" class="nav-link">联系方式</a>
+        </nav>
+
+        <section class="skills" aria-label="技能清单">
+          <h2 class="side-title">技能清单</h2>
+          <div class="skill-group">
+            <ul class="tag-list">
+              <li>Python</li><li>Java</li><li>TypeScript</li><li>HTML/CSS</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </aside>
+
+    <!-- ========== 右侧滚动主内容 ========== -->
+    <main class="main">
+
+      <!-- 项目作品展示区 -->
+      <section class="section" id="projects">
+        <header class="section-head">
+          <h2>项目作品</h2>
+          <p class="section-desc">课程与自主开发项目,按完成时间倒序排列。</p>
+        </header>
+        <div class="project-list" id="projectList">
+          <!-- 项目区块由 js/data-loader.js 依据 data/projects.js 渲染 -->
+        </div>
+      </section>
+
+      <!-- 关于我 -->
+      <section class="section" id="about">
+        <header class="section-head">
+          <h2>关于我</h2>
+        </header>
+        <div class="prose">
+          <p>我叫林凡斐,是一名数据技术与大数据技术专业学生,目前主要关注 <strong>AI 辅助开发</strong> 与 <strong>大语言模型技术</strong>。平时主要使用 Python、Java 和 TypeScript 进行项目开发,也在持续学习前后端开发、数据可视化和 AI 应用构建。</p>
+          <p>当前方向:AI 辅助开发、大语言模型应用。状态:广州软件学院-在读。</p>
+        </div>
+      </section>
+
+      <!-- 联系方式 -->
+      <section class="section" id="contact">
+        <header class="section-head">
+          <h2>联系方式</h2>
+        </header>
+        <ul class="contact-list">
+          <li><span class="contact-label">邮箱</span><a href="mailto:xiaohe@example.com">xiaohe@example.com</a></li>
+          <li><span class="contact-label">微信</span><span>xiaohezi</span></li>
+          <li><span class="contact-label">GitHub</span><a href="https://github.com/xiaohe-dev" target="_blank" rel="noopener">github.com/xiaohe-dev</a></li>
+          <li><span class="contact-label">个人主页</span><a href="https://xiaohe.dev" target="_blank" rel="noopener">xiaohe.dev</a></li>
+          <li><span class="contact-label">所在地</span><span>中国·广州</span></li>
+        </ul>
+        <footer class="footer">© 2026 林凡斐 · 本页面由原生 HTML / CSS / JavaScript 构建</footer>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="data/projects.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

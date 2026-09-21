@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="城市脉搏:交通与天气数据可视化大屏">
+  <rect width="640" height="400" fill="#f2f7f3"/>
+  <!-- 大屏边框 -->
+  <rect x="40" y="30" width="560" height="310" rx="14" fill="#ffffff" stroke="#d5e3d9"/>
+  <rect x="290" y="340" width="60" height="30" fill="#d5e3d9"/>
+  <rect x="250" y="366" width="140" height="10" rx="5" fill="#bcdcc7"/>
+  <!-- 标题条 -->
+  <rect x="64" y="52" width="180" height="14" rx="7" fill="#2e7d54"/>
+  <rect x="64" y="76" width="110" height="8" rx="4" fill="#cfe0d5"/>
+  <!-- 折线图 -->
+  <g>
+    <rect x="64" y="104" width="290" height="130" rx="8" fill="#f2f7f3"/>
+    <polyline points="80,214 120,180 160,196 200,150 240,168 280,128 330,146"
+              fill="none" stroke="#57b07f" stroke-width="4" stroke-linecap="round"/>
+    <polyline points="80,224 120,210 160,218 200,190 240,202 280,176 330,188"
+              fill="none" stroke="#a8d8bc" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 8"/>
+    <circle cx="280" cy="128" r="5" fill="#2e7d54"/>
+  </g>
+  <!-- 地图与路线 -->
+  <g>
+    <rect x="374" y="104" width="202" height="130" rx="8" fill="#e6f3ea"/>
+    <path d="M390 210 C 430 150, 470 230, 500 160 S 560 180, 566 130"
+          fill="none" stroke="#2e7d54" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="430" cy="176" r="5" fill="#57b07f"/>
+    <circle cx="500" cy="160" r="5" fill="#57b07f"/>
+    <circle cx="545" cy="168" r="5" fill="#57b07f"/>
+  </g>
+  <!-- 底部指标卡 -->
+  <g>
+    <rect x="64" y="252" width="150" height="64" rx="8" fill="#f2f7f3"/>
+    <rect x="80" y="268" width="60" height="10" rx="5" fill="#9ecdae"/>
+    <rect x="80" y="288" width="100" height="12" rx="6" fill="#2e7d54"/>
+    <rect x="234" y="252" width="150" height="64" rx="8" fill="#f2f7f3"/>
+    <rect x="250" y="268" width="60" height="10" rx="5" fill="#9ecdae"/>
+    <rect x="250" y="288" width="80" height="12" rx="6" fill="#57b07f"/>
+    <rect x="404" y="252" width="172" height="64" rx="8" fill="#f2f7f3"/>
+    <rect x="420" y="268" width="60" height="10" rx="5" fill="#9ecdae"/>
+    <rect x="420" y="288" width="120" height="12" rx="6" fill="#a8d8bc"/>
+  </g>
+</svg>

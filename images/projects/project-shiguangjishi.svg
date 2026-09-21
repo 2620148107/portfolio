@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-label="拾光集市:校园二手交易平台">
+  <rect width="640" height="400" fill="#f2f7f3"/>
+  <!-- 手机 -->
+  <g>
+    <rect x="60" y="50" width="180" height="300" rx="22" fill="#ffffff" stroke="#bcdcc7" stroke-width="3"/>
+    <rect x="120" y="62" width="60" height="8" rx="4" fill="#d5e3d9"/>
+    <!-- 搜索框 -->
+    <rect x="78" y="86" width="144" height="28" rx="14" fill="#e6f3ea"/>
+    <circle cx="96" cy="100" r="7" fill="none" stroke="#2e7d54" stroke-width="3"/>
+    <line x1="101" y1="105" x2="108" y2="112" stroke="#2e7d54" stroke-width="3" stroke-linecap="round"/>
+    <rect x="116" y="96" width="70" height="8" rx="4" fill="#bcdcc7"/>
+    <!-- 商品列表行 -->
+    <g>
+      <rect x="78" y="130" width="44" height="44" rx="8" fill="#a8d8bc"/>
+      <rect x="132" y="136" width="80" height="10" rx="5" fill="#cfe0d5"/>
+      <rect x="132" y="156" width="46" height="12" rx="6" fill="#2e7d54"/>
+      <rect x="78" y="192" width="44" height="44" rx="8" fill="#d2e9da"/>
+      <rect x="132" y="198" width="80" height="10" rx="5" fill="#cfe0d5"/>
+      <rect x="132" y="218" width="46" height="12" rx="6" fill="#57b07f"/>
+      <rect x="78" y="254" width="44" height="44" rx="8" fill="#e6f3ea"/>
+      <rect x="132" y="260" width="80" height="10" rx="5" fill="#cfe0d5"/>
+      <rect x="132" y="280" width="46" height="12" rx="6" fill="#a8d8bc"/>
+    </g>
+  </g>
+  <!-- 商品卡片:书 -->
+  <g transform="translate(310 70)">
+    <rect width="130" height="130" rx="12" fill="#ffffff" stroke="#d5e3d9"/>
+    <rect x="35" y="28" width="60" height="74" rx="6" fill="#57b07f"/>
+    <rect x="43" y="36" width="44" height="58" rx="3" fill="#e6f3ea"/>
+    <line x1="50" y1="50" x2="80" y2="50" stroke="#9ecdae" stroke-width="4" stroke-linecap="round"/>
+    <line x1="50" y1="64" x2="74" y2="64" stroke="#cfe0d5" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- 商品卡片:自行车 -->
+  <g transform="translate(470 70)">
+    <rect width="130" height="130" rx="12" fill="#ffffff" stroke="#d5e3d9"/>
+    <circle cx="42" cy="86" r="18" fill="none" stroke="#2e7d54" stroke-width="4"/>
+    <circle cx="92" cy="86" r="18" fill="none" stroke="#2e7d54" stroke-width="4"/>
+    <path d="M42 86 L62 54 L84 54 M62 54 L72 86 L92 86 M62 54 L56 44 L68 44" fill="none" stroke="#57b07f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- 信用评分 -->
+  <g transform="translate(310 230)">
+    <rect width="290" height="110" rx="12" fill="#e6f3ea" stroke="#bcdcc7"/>
+    <circle cx="46" cy="44" r="20" fill="#2e7d54"/>
+    <path d="M38 44 l5 5 l11 -12" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <rect x="80" y="28" width="120" height="12" rx="6" fill="#9ecdae"/>
+    <rect x="80" y="52" width="170" height="10" rx="5" fill="#cfe0d5"/>
+    <!-- 星标 -->
+    <g fill="#57b07f" transform="translate(80 76)">
+      <path d="M8 0 l2.4 5 5.6.6 -4 3.8 1 5.6 -5 -2.8 -5 2.8 1 -5.6 -4 -3.8 5.6 -.6z"/>
+      <path transform="translate(24 0)" d="M8 0 l2.4 5 5.6.6 -4 3.8 1 5.6 -5 -2.8 -5 2.8 1 -5.6 -4 -3.8 5.6 -.6z"/>
+      <path transform="translate(48 0)" d="M8 0 l2.4 5 5.6.6 -4 3.8 1 5.6 -5 -2.8 -5 2.8 1 -5.6 -4 -3.8 5.6 -.6z"/>
+      <path transform="translate(72 0)" d="M8 0 l2.4 5 5.6.6 -4 3.8 1 5.6 -5 -2.8 -5 2.8 1 -5.6 -4 -3.8 5.6 -.6z"/>
+      <path transform="translate(96 0)" d="M8 0 l2.4 5 5.6.6 -4 3.8 1 5.6 -5 -2.8 -5 2.8 1 -5.6 -4 -3.8 5.6 -.6z" opacity="0.35"/>
+    </g>
+  </g>
+</svg>

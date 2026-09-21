@@ -1,0 +1,324 @@
+/* ========== 组件样式 ========== */
+
+/* ---------- 个人简介(侧边栏) ---------- */
+.profile {
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  background: var(--color-accent-soft);
+}
+
+.avatar.img-failed {
+  display: none;
+}
+
+.name {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.tagline {
+  color: var(--color-text-soft);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.meta {
+  color: var(--color-text-soft);
+  font-size: 13px;
+}
+
+/* ---------- 侧边栏小节标题 ---------- */
+.side-title {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: var(--color-text-soft);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-divider);
+}
+
+/* ---------- 导航菜单 ---------- */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.nav-link {
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: var(--color-text);
+  font-size: 15px;
+}
+
+.nav-link:hover {
+  background: var(--color-accent-soft);
+  text-decoration: none;
+}
+
+.nav-link.active {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ---------- 技能标签 ---------- */
+.skill-group {
+  margin-bottom: 14px;
+}
+
+.skill-group-name {
+  font-size: 13px;
+  color: var(--color-text-soft);
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-list li {
+  font-size: 12.5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--color-divider);
+  color: var(--color-text);
+}
+
+/* ---------- 汉堡按钮(移动端) ---------- */
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  margin: 5px 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 1023px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* ---------- 主内容区标题 ---------- */
+.section-head {
+  margin-bottom: 24px;
+}
+
+.section-head h2 {
+  font-size: 26px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.section-head h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 6px;
+  width: 4px;
+  border-radius: 2px;
+  background: var(--color-accent);
+}
+
+.section-desc {
+  color: var(--color-text-soft);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* ---------- 项目条目:图文穿插,左右交替 ---------- */
+.project {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  padding: 36px 0;
+}
+
+.project + .project {
+  border-top: 1px solid var(--color-divider);
+}
+
+/* 偶数项图文互换位置,形成穿插节奏 */
+.project:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.project-media {
+  flex: 0 0 42%;
+}
+
+.project-figure {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-sidebar-bg);
+  aspect-ratio: 16 / 10;
+}
+
+.project-figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 配图缺位时的占位块 */
+.project-figure .placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-soft);
+  font-size: 13px;
+  letter-spacing: 1px;
+  border: 1px dashed var(--color-divider);
+  border-radius: var(--radius);
+}
+
+.project-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-index {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 1px;
+}
+
+.project-title {
+  font-size: 21px;
+  margin: 4px 0 10px;
+}
+
+/* 业务分类标签:小尺寸、低饱和,不抢标题视觉重心 */
+.project-category {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  padding: 2px 9px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  color: var(--color-text-soft);
+  background: var(--color-sidebar-bg);
+  border: 1px solid var(--color-divider);
+  border-radius: 999px;
+}
+
+.project-date {
+  font-size: 13px;
+  color: var(--color-text-soft);
+  margin-bottom: 12px;
+}
+
+.project-summary {
+  color: var(--color-text-soft);
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tech li {
+  font-size: 12.5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+/* 移动端:项目退化为上图下文 */
+@media (max-width: 1023px) {
+  .project,
+  .project:nth-child(even) {
+    flex-direction: column;
+    gap: 18px;
+    padding: 28px 0;
+  }
+
+  .project-media {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/* ---------- 关于我 ---------- */
+.prose p {
+  margin-bottom: 14px;
+  color: var(--color-text);
+}
+
+/* ---------- 联系方式 ---------- */
+.contact-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px 32px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+.contact-label {
+  flex: 0 0 72px;
+  color: var(--color-text-soft);
+  font-size: 14px;
+}
+
+/* ---------- 页脚 ---------- */
+.footer {
+  margin-top: 40px;
+  color: var(--color-text-soft);
+  font-size: 13px;
+}
